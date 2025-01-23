@@ -1,0 +1,55 @@
+footer {
+    background-color: var(--main_color2);
+    position: relative;
+    bottom: -20px;
+    left: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 50vh;
+    width: 100%;
+}
+
+footer .info {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+}
+
+footer .info div p {
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+footer .info div h3 {
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+footer .info div {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo {
+    color: var(--main_color);
+    text-align: center;
+    overflow: hidden;
+    bottom: 0;
+    height: 230px;
+    width: 100%;
+    position: absolute;
+    font-size: 300px;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}

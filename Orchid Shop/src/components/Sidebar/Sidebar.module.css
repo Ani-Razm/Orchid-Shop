@@ -1,0 +1,68 @@
+.sidebar h1 {
+    color: var(--main_color);
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+    margin: 0;
+}
+
+.nav {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 350px;
+    align-items: start;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-right: 2px solid;
+    grid-area: 1/1/span 10/span 1;
+}
+
+.sidebar a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+.logout a, .logout a i {
+    color: rgb(199, 57, 57);
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav ul li:nth-child(1) span i{
+    font-size: 15px;
+    color: var(--main_color);
+    font-weight: 800;
+}
+
+.nav i {
+    font-size: 30px;
+    font-weight: 100;
+    color: var(--main_color);
+}
+
+.nav ul li span {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30px;
+    height: 30px;
+}
+

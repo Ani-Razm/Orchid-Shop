@@ -1,0 +1,38 @@
+.product {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    width: 180px;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.product img {
+    width: 110%;
+}
+
+.product div i {
+    margin: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 27px;
+    transition: all 0.2s;
+}
+
+.product div i:hover {
+    background-color: #cfcfcf;
+}
+
+.title {
+    position: absolute;
+    bottom: 0;
+}

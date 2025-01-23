@@ -1,0 +1,12 @@
+.offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #4d3f66;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+}
