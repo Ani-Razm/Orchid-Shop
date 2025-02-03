@@ -1,15 +1,15 @@
 import styles from "./BestOffer.module.css";
 
-function BestOffer() {
+function BestOffer(props) {
     return (
         <div className={styles.offer}>
-            <div className="image">
-                <img src="./assets/images/orch1.jpg" alt="pink orchid"/>
+            <div className={styles.image}>
+                <img src={props.img} alt="pink orchid"/>
             </div>
             <h5>pink orchid</h5>
-            <div className="prices">
-                <p id="old-price">$50</p>
-                <p id="new-price">$30</p>
+            <div className={styles.prices}>
+                <p className={styles.Oldprice}>$52</p>
+                <p className={styles.newPrice}>$29</p>
             </div>
         </div>
     )

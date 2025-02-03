@@ -1,10 +1,9 @@
-import Navbar from "./components/Navbar"
+import Introduction from "./pages/Introduction"
 
 function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <p>Home</p>
+      <Introduction></Introduction>
     </>
   )
 }

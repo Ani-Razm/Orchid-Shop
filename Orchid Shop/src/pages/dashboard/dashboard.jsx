@@ -110,12 +110,20 @@ function Dashboard() {
     setShowPopOut(!showPopOut);
     console.log(showPopOut)
   }
+
+  const [showPopOut2, setShowPopOut2] = useState(false);
+  const toggle2 = () => {
+    setShowPopOut(!showPopOut2);
+    console.log(showPopOut2)
+  }
+
+
   return (
     <div className={styles.dashboard}>
       <Sidebar></Sidebar>
       <SearchBar></SearchBar>
       <div className={styles.main}>
-      <Header2></Header2>
+        <Header2></Header2>
         <div className={styles.saved}>
           <h3>Saved Products</h3>
           <ProductList products={savedProducts} />
@@ -125,9 +133,37 @@ function Dashboard() {
           <ProductList products={favoriteProducts} />
         </div>
       </div>
-      
+
 
       <OffersSection></OffersSection>
+
+      <PopOut
+        show={showPopOut}
+        care={infos[0].care}
+        img={infos[0].image}
+        name={infos[0].name}
+        description={infos[0].description}
+        price={infos[0].price}
+        addToCart={() => console.log('Added to cart')}
+        onClose={() => {
+          console.log('Closed')
+          toggle()
+        }}
+      />
+
+      <PopOut
+        show={showPopOut2}
+        care={infos[0].care}
+        img={infos[0].image}
+        name={infos[0].name}
+        description={infos[0].description}
+        price={infos[0].price}
+        addToCart={() => console.log('Added to cart')}
+        onClose={() => {
+          console.log('Closed')
+          toggle()
+        }}
+      />
 
       <PopOut
         show={showPopOut}

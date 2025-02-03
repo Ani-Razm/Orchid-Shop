@@ -36,7 +36,7 @@ function Register() {
                         Login
                     </button>
                     <p className={styles.text}>
-                        Don't have an account? <a href="/register">Register</a>
+                        Do have an account? <a href="/LogIn">Log In</a>
                     </p>
                 </form>
             </div>

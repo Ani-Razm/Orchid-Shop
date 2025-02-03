@@ -3,7 +3,7 @@ import styles from './PopOut.module.css';
 function PopOut(props) {
     return (
         <div className={props.show ? styles.popOut : styles.popOutHidden}>
-            <div className={styles.popOutContent}>
+            <div className={styles.popOutContent} onClick={props.onClose}>
                 <div className={styles.infos}>
 
                     <div className={styles.info}>

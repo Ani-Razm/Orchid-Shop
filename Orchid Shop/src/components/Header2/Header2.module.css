@@ -1,6 +1,5 @@
 .cover {
     text-transform: capitalize;
-    font-size: 1.5rem;
     letter-spacing: 3px;
     display: flex;
     justify-content: center;
@@ -16,6 +15,7 @@
     background-position: -250px -400px;
     transition: all 0.5s ease;
     cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
 }
 
 .cover:hover {
@@ -23,7 +23,21 @@
 }
 
 .header {
+    width: 100%;
     color: black;
-    grid-area: 2/2/span 1/span 4;
     padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header p {
+    margin: 10px 0px;
+    color: rgb(59, 59, 59);
+}
+
+.cover h2 {
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 10px;
 }

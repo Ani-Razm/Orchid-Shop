@@ -14,7 +14,7 @@
     width: 100vw;
     height: 100vh;
     grid-template: repeat(10, 1fr)/17% 66% 17%;
-
+    overflow: hidden;
 }
 
 :root {
@@ -166,15 +166,22 @@ img {
     border: none;
     text-align: left;
     color: black;
+    margin: 10px 0px;
 }
 
 .dashboard h1 {
     color: var(--main_color) !important;
 }
+
 .main {
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+    justify-content: top;
     grid-area: 2/2/span 10/span 1;
     display: flex;
     flex-direction: column;
     border-right: 2px solid;
     height: 100%;
 }
+
