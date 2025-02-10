@@ -9,7 +9,7 @@ function Header2() {
             </div>
 
             <div className={styles.cover}>
-                <h2>best orchid shop</h2>
+                <h2>Rich colection of flowers</h2>
             </div>
         </div>
     );

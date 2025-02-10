@@ -7,7 +7,7 @@
     color: white;
     width: 100%;
     height: 150px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-image: url('../src/assets/images/cover.JPG');
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
@@ -15,7 +15,7 @@
     background-position: -250px -400px;
     transition: all 0.5s ease;
     cursor: pointer;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
+
 }
 
 .cover:hover {

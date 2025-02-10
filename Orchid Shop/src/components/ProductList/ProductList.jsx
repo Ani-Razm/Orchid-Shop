@@ -5,7 +5,8 @@ function ProductList({ products }) {
     return (
         <div className={styles.productList}>
             {products.map((product, index) => (
-                <Product key={index} name={product.name} image={product.image}/>
+               
+                <a href={`/product/${index}`}><Product key={index} name={product.name} image={product.image} page={product.page}/></a>
             ))}
         </div>
     );

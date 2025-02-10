@@ -7,6 +7,7 @@ import Dashboard from './pages/dashboard/dashboard.jsx';
 import Introduction from './pages/Introduction.jsx';
 import LogIn from "./pages/LogIn/Login.jsx";
 import Register from "./pages/Register/Register.jsx";
+import ProductPage from './components/ProductPage/ProductPage.jsx';
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
   { path: "/introduction", element: <Introduction /> },
   { path: "/login", element: <LogIn /> },
   { path: "/Register", element: <Register /> },
+  { path: "/product/:id", element: <ProductPage /> },
 ])
 
 createRoot(document.getElementById('root')).render(
