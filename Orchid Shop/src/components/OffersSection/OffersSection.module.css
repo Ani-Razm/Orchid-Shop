@@ -15,7 +15,7 @@
 .offersSection>div {
     display: flex;
     flex-direction: column;
-    gap: 21px
+    gap: 21px;
 }
 
 .offersSection>div>div{

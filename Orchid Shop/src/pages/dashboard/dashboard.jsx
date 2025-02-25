@@ -18,11 +18,6 @@ import orchid9 from '../../assets/images/orch9.jpg';
 import orchid10 from '../../assets/images/orch10.jpg';
 import orchid11 from '../../assets/images/orch11.jpg';
 
-
-
-import { useState } from 'react';
-
-
 const savedProducts = [
   { name: 'Orchid 1', image: orchid1 },
   { name: 'Orchid 2', image: orchid2 },
@@ -42,14 +37,6 @@ const favoriteProducts = [
 
 
 function Dashboard() {
-  const [showPopOut, setShowPopOut] = useState(false);
-  const toggle = () => {
-    setShowPopOut(!showPopOut);
-    console.log(showPopOut)
-  }
-
-
-
   return (
     <div className={styles.dashboard}>
       <Sidebar></Sidebar>

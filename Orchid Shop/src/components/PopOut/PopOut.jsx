@@ -1,8 +1,14 @@
 import styles from './PopOut.module.css';
+import SearchBar from '../SearchBar/searchBar';
+import Sidebar from '../Sidebar/Sidebar';
 
 function PopOut(props) {
     return (
-        <div className={props.show ? styles.popOut : styles.popOutHidden}>
+
+        <div className={styles.popOut}>
+            <Sidebar></Sidebar>
+            <SearchBar></SearchBar>
+
             <div className={styles.popOutContent} onClick={props.onClose}>
                 <div className={styles.infos}>
 
@@ -19,7 +25,6 @@ function PopOut(props) {
                             <h3>Sunlight</h3>
                             <p>{props.care.sunlight}</p>
                         </div>
-
                     </div>
                     <div className={styles.info}>
                         <i className='bx bxs-thermometer'></i>
@@ -40,7 +45,7 @@ function PopOut(props) {
 
                 </div>
                 <div className={styles.img}>
-                    <img src={props.img} alt={props.name} />
+                    <img src={props.image} alt={props.name} />
                 </div>
                 <div className={styles.mainContent}>
                     <h2>{props.name}</h2>
@@ -51,7 +56,6 @@ function PopOut(props) {
                         <button>Add To Favorites </button>
                     </div>
                 </div>
-                <div className={styles.x} onClick={props.onClose}><i className='bx bx-x' ></i></div>
             </div>
         </div>
     );

@@ -1,7 +1,5 @@
 import BestOffer from "../../components/BestOffer/BestOffer";
 import styles from "./OffersSection.module.css";
-
-import orchid6 from '../../assets/images/orch6.jpg';
 import orchid8 from '../../assets/images/orch8.jpg';
 import orchid9 from '../../assets/images/orch9.jpg';
 import orchid10 from '../../assets/images/orch10.jpg';
@@ -21,7 +19,7 @@ function OffersSection() {
                 <h3>Offers</h3>
                 <div>
                     <BestOffer img={orchid10}></BestOffer>
-                    <BestOffer img={orchid6}></BestOffer>
+                    <BestOffer img={orchid8}></BestOffer>
                     <BestOffer img={orchid8}></BestOffer>
                     <BestOffer img={orchid9}></BestOffer>
                     <BestOffer img={orchid11}></BestOffer>

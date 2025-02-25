@@ -1,29 +1,25 @@
 import { useParams } from "react-router-dom";
 import PopOut from "../PopOut/PopOut";
+import Navbar from "../Header/header";
 
 import orch1 from '../../assets/images/png/orch1.png';
 import orch2 from '../../assets/images/png/orch2.png';
 import orch3 from '../../assets/images/png/orch3.png';
 import orch5 from '../../assets/images/png/orch5.png';
 
-const products = {
-  "0": { name: "Laptop", price: "$1000" },
-  "1": { name: "Phone", price: "$500" },
-};
-
 const infos = [
   {
-    name: "Purple Orchid",
+    name: "Pink Orchid",
     description:
-      "An exotic and elegant addition to your home, this orchid boasts stunning purple blooms with intricate detailing.",
-    price: "25.99",
+      "Delicate and charming, this pink orchid adds a soft and romantic touch to your home decor.",
+    price: "28.99",
     care: {
       watering: "Water once a week, allowing soil to dry slightly.",
       sunlight: "Prefers bright, indirect sunlight.",
       temperature: "Thrives in temperatures between 65°F and 75°F.",
       tips: "Fertilize every two weeks during the growing season."
     },
-    image: orch5,
+    image: orch3,
   },
   {
     name: "White Orchid",
@@ -36,7 +32,7 @@ const infos = [
       temperature: "Thrives in temperatures between 65°F and 75°F.",
       tips: "Fertilize every two weeks during the growing season."
     },
-    image: orch1,
+    image: orch2,
   },
   {
     name: "Pink Orchid",
@@ -49,7 +45,7 @@ const infos = [
       temperature: "Thrives in temperatures between 65°F and 75°F.",
       tips: "Fertilize every two weeks during the growing season."
     },
-    image: orch2,
+    image: orch1,
 
   },
   {
@@ -68,12 +64,19 @@ const infos = [
 ]
 
 const ProductPage = () => {
-  const { id } = useParams();
- 
+  const { id } = useParams(); // Extracts the 'id' parameter from the URL
+  const productId = Number(id); // converts it to integer
+
   return (
     <>
-    <p>it works</p>
-    <PopOut care={infos[id].care} name={infos[id].name} description={infos[id].description} price={infos[id].price} image={infos[id].image}></PopOut>
+      <PopOut
+        care={infos[productId].care} 
+        name={infos[productId].name} 
+        description={infos[productId].description} 
+        // Render product details based on the ID
+        price={infos[productId].price} 
+        image={infos[productId].image} 
+      />
     </>
   );
 };
